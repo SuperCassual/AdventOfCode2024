@@ -36,7 +36,7 @@ namespace AdventOfCode2024.Opdrachten
         private int CalculateDistanceNumber(List<int> listLeft, List<int> listRight)
         {
             int distance = 0;
-            for (int i = 0; i < listLeft.Count; i++)
+            for (int i = 0, length = listLeft.Count; i < length; i++)
             {
                 distance += Math.Max(listLeft[i], listRight[i]) - Math.Min(listLeft[i], listRight[i]);
             }
@@ -60,7 +60,6 @@ namespace AdventOfCode2024.Opdrachten
                 }
                 similarityScore += listLeft[leftPivot] * appearances;
             }
-
             return similarityScore;
         }
 
