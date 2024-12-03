@@ -12,7 +12,7 @@ namespace AdventOfCode2024.Opdrachten
     {
         public void Run()
         {
-            StreamReader sr = new StreamReader("D:\\Code\\Advent 2024\\AdventOfCode2024\\AdventOfCode2024\\Resources\\O2-1.txt");
+            StreamReader sr = new StreamReader("..\\..\\..\\Resources\\O2-1.txt");
             string line = sr.ReadLine();
             int safeReports = 0;
             int problemDampenerSafeReports = 0;

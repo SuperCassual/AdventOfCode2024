@@ -11,7 +11,7 @@ namespace AdventOfCode2024.Opdrachten
     {
         public void Run()
         {
-            StreamReader sr = new StreamReader("D:\\Code\\Advent 2024\\AdventOfCode2024\\AdventOfCode2024\\Resources\\O1-1.txt");
+            StreamReader sr = new StreamReader("..\\..\\..\\Resources\\O1-1.txt");
             List<int> listLeft = new List<int>();
             List<int> listRight = new List<int>();
             string line = sr.ReadLine();
