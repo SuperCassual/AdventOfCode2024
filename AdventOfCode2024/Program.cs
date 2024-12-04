@@ -8,7 +8,7 @@ namespace AdventOfCode2024
         static void Main(string[] args)
         {
             IOpdracht opdracht;
-            opdracht = new Opdracht3_1();
+            opdracht = new Opdracht4_1();
 
             if (opdracht != null)
             {
@@ -25,6 +25,18 @@ namespace AdventOfCode2024
                 {
                     case "1-1":
                         opdracht = new Opdracht1_1();
+                        opdracht.Run();
+                        break;
+                    case "2-1":
+                        opdracht = new Opdracht2_1();
+                        opdracht.Run();
+                        break;
+                    case "3-1":
+                        opdracht = new Opdracht3_1();
+                        opdracht.Run();
+                        break;
+                    case "4-1":
+                        opdracht = new Opdracht4_1();
                         opdracht.Run();
                         break;
                     default:
