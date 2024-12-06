@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AdventOfCode2024.Interfaces;
+﻿using AdventOfCode2024.Interfaces;
 using System.Text.RegularExpressions;
-using System.Net;
 
 namespace AdventOfCode2024.Opdrachten
 {
