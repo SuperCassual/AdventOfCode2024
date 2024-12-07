@@ -62,6 +62,5 @@ namespace AdventOfCode2024.Classes
         }
 
         public Int2 CurrentPosition { get { return _position; } }
-
     }
 }

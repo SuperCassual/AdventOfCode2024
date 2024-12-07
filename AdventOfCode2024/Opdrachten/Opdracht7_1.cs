@@ -27,8 +27,8 @@ namespace AdventOfCode2024.Opdrachten
                 line = sr.ReadLine();
             }
 
-            Console.WriteLine(result);
-            Console.WriteLine(result2);
+            Console.WriteLine($"Calibration result with + and * operatros: {result}");
+            Console.WriteLine($"Calibration result with +, * and || operators: {result2}");
         }
 
         private long CanElementsMakeProductResult(long product, List<long> elements, bool useConcatenation = false)

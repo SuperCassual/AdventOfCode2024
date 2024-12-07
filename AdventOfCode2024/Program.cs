@@ -43,6 +43,14 @@ namespace AdventOfCode2024
                         opdracht = new Opdracht5_1();
                         opdracht.Run();
                         break;
+                    case "6-1":
+                        opdracht = new Opdracht6_1();
+                        opdracht.Run();
+                        break;
+                    case "7-1":
+                        opdracht = new Opdracht7_1();
+                        opdracht.Run();
+                        break;
                     default:
                         exit = true;
                         break;
