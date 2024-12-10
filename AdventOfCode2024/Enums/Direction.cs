@@ -25,7 +25,7 @@ namespace AdventOfCode2024.Enums
                 case Direction.West:
                     return new Int2(-1, 0);
                 default:
-                    Console.WriteLine("Guard is pissing on the moon");
+                    Console.WriteLine("Entity is pissing on the moon");
                     return new Int2(0, 0);
             }
         }

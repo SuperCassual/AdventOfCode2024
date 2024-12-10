@@ -36,6 +36,16 @@
             return firstInput.X != secondInput.X || firstInput.Y != secondInput.Y;
         }
 
+        public static Int2 operator+(Int2 firstInput, Int2 secondInput)
+        {
+            return new Int2(firstInput.X + secondInput.X, firstInput.Y + secondInput.Y);
+        }
+
+        public static Int2 operator-(Int2 firstInput, Int2 secondInput)
+        {
+            return new Int2(firstInput.X - secondInput.X, firstInput.Y - secondInput.Y);
+        }
+
         public override string ToString()
         {
             return $"X:{this.X}, Y:{this.Y}";

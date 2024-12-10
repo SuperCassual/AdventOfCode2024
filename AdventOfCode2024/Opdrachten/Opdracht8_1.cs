@@ -49,8 +49,6 @@ namespace AdventOfCode2024.Opdrachten
             }
             var noDupes = antiNodes.Distinct().ToList();
             Console.WriteLine(noDupes.Count);
-
-
         }
 
         private void HarmonicResonantAdd(int xCoord, int yCoord, List<Int2> antiNodes, Int2 outputcoord, Int2 previouscoord)
@@ -70,7 +68,6 @@ namespace AdventOfCode2024.Opdrachten
             int yDifference = one.Y - two.Y;
             return new Int2(one.X + xDifference, one.Y + yDifference);
         }
-
 
         private void AddValueToHashtable(Hashtable interferences, char key, Int2 coordinate)
         {
