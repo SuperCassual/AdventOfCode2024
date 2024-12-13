@@ -1,5 +1,4 @@
-﻿using AdventOfCode2024.Interfaces;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace AdventOfCode2024.Opdrachten
 {

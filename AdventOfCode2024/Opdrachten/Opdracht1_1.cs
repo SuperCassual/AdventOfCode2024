@@ -1,6 +1,4 @@
-﻿using AdventOfCode2024.Interfaces;
-
-namespace AdventOfCode2024.Opdrachten
+﻿namespace AdventOfCode2024.Opdrachten
 {
     class Opdracht1_1 : IOpdracht
     {

@@ -1,7 +1,6 @@
-﻿namespace AdventOfCode2024.Interfaces
+﻿namespace AdventOfCode2024;
+
+internal interface IOpdracht
 {
-    internal interface IOpdracht
-    {
-        public void Run();
-    }
+    public void Run();
 }

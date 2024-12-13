@@ -1,5 +1,4 @@
-﻿using AdventOfCode2024.Interfaces;
-using AdventOfCode2024.Opdrachten;
+﻿using AdventOfCode2024.Opdrachten;
 
 namespace AdventOfCode2024
 {
@@ -8,7 +7,7 @@ namespace AdventOfCode2024
         static void Main(string[] args)
         {
             IOpdracht opdracht;
-            opdracht = new Opdracht10_1();
+            opdracht = new Opdracht12();
 
             if (opdracht != null)
             {
