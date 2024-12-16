@@ -27,4 +27,11 @@ static class DirectionExtensions
                 return new Int2(0, 0);
         }
     }
+
+    public static Direction GetNextDirection(this Direction direction, int times = 1)
+    { //clockwise, naturally
+        int currentDirection = (int)direction;
+        currentDirection = (currentDirection + times) % 4;
+        return (Direction)currentDirection;
+    }
 }

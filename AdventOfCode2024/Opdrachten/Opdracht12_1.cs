@@ -1,40 +1,41 @@
 ﻿namespace AdventOfCode2024;
 
-class Opdracht12 : IOpdracht
+class Opdracht12_1 : IOpdracht
 {
     List<Field> fields;
     public void Run()
     {
         int results = 0;
+        int bulkresults = 0;
 
         fields = new List<Field>();
         StreamReader sr = new StreamReader("..\\..\\..\\Resources\\O12-1.txt");
         string line = sr.ReadLine();
         Plant[] previousLine = new Plant[line.Length];
 
-        while (line != null && line != "")
+        for (int y = 0; line != null && line != ""; y++)
         {
-            for (int i = 0; i < previousLine.Length; i++)
+            for (int x = 0; x < previousLine.Length; x++)
             {
-                Plant newPlant = new Plant(line[i]);
+                Plant newPlant = new Plant(line[x], x, y);
 
                 //check left
-                if (i < 1)
+                if (x < 1)
                 {
                     newPlant.AddFence(Direction.West);
                 }
                 else
                 {
-                    CheckLeft(newPlant, previousLine[i - 1]);
+                    CheckLeft(newPlant, previousLine[x - 1]);
                 }
 
                 //check up
-                CheckUp(newPlant, previousLine[i]);
+                CheckUp(newPlant, previousLine[x]);
 
                 //check field
                 AssignFieldIfUnassigned(newPlant);
 
-                previousLine[i] = newPlant;
+                previousLine[x] = newPlant;
 
             }
             previousLine[previousLine.Length - 1].AddFence(Direction.East);
@@ -48,9 +49,11 @@ class Opdracht12 : IOpdracht
         foreach(Field field in fields)
         {
             results += field.CalculateFenceScore();
+            bulkresults += field.CalculateBulkFenceScore();
         }
 
         Console.WriteLine(results);
+        Console.WriteLine(bulkresults);
     }
 
     private void AssignFieldIfUnassigned(Plant newPlant)
