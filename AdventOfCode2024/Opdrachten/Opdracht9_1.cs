@@ -16,7 +16,7 @@ class Opdracht9_1 : IOpdracht
 
         LinkedFile startLinkedList = FillDictionaryBlocks(thisVariableNameIsSuperLongToMatchTheGravitasOfTheLineThatIsBeingRead);
         DefragDictionaryBlocks(startLinkedList);
-        startLinkedList.WriteList();
+        //startLinkedList.WriteList();
         checkSum = CalculateCheckSumInBlocks(startLinkedList);
         Console.WriteLine(checkSum);
     }
@@ -109,6 +109,10 @@ class Opdracht9_1 : IOpdracht
         {
             LinkedFile spaceFinder = start;
             LinkedFile prevPivot = pivot.Prev;
+            while (prevPivot.Id == -1 )
+            {
+                prevPivot = prevPivot.Prev;
+            }
             while (spaceFinder != pivot)
             {
                 if(spaceFinder.Id == -1 && spaceFinder.Size >= pivot.Size)

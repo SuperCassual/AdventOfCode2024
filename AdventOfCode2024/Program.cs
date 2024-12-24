@@ -7,7 +7,7 @@ namespace AdventOfCode2024
         static void Main(string[] args)
         {
             IOpdracht opdracht;
-            opdracht = new Opdracht16_1();
+            opdracht = new Opdracht24_1();
 
             if (opdracht != null)
             {

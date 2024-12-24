@@ -128,6 +128,7 @@ namespace AdventOfCode2024.Classes
                     }
                 }
                 file = file.Next;
+                write += ' ';
             }
             Console.WriteLine(write);
         }
